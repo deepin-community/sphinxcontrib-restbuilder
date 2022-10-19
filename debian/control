@@ -1,0 +1,32 @@
+Source: sphinxcontrib-restbuilder
+Maintainer: Carsten Schoenert <c.schoenert@t-online.de>
+Section: python
+Priority: optional
+Build-Depends:
+ debhelper-compat (= 13),
+ dh-python,
+ python3-all,
+ python3-docutils,
+ python3-pytest,
+ python3-setuptools,
+ python3-sphinx,
+Standards-Version: 4.5.1
+Vcs-Browser: https://salsa.debian.org/tijuca/sphinxcontrib-restbuilder
+Vcs-Git: https://salsa.debian.org/tijuca/sphinxcontrib-restbuilder.git
+Homepage: https://github.com/sphinx-contrib/restbuilder
+
+Package: python3-sphinxcontrib.restbuilder
+Architecture: all
+Depends:
+ ${misc:Depends},
+ ${python3:Depends},
+Description: extension to build reST (reStructuredText) files with Sphinx (Python 3)
+ This extension is in particular useful to use in combination with the autodoc
+ extension. In this combination, autodoc generates the documentation based on
+ docstrings, and restbuilder outputs the result are reStructuredText (.rst)
+ files.
+ .
+ In order to use it, add sphinxcontrib.restbuilder into the extensions list of
+ your Sphinx configuration file (conf.py)
+ .
+ This package contains the Python 3 version.

@@ -1,0 +1,68 @@
+sphinxcontrib-restbuilder (0.3-2) unstable; urgency=medium
+
+  * [a22b5c4] d/control: Adding more required packages to B-D
+
+ -- Carsten Schoenert <c.schoenert@t-online.de>  Fri, 05 Mar 2021 17:32:15 +0100
+
+sphinxcontrib-restbuilder (0.3-1) unstable; urgency=medium
+
+  * [b32a601] New upstream version 0.3
+  * [181a4a6] Drop existing patch queue
+    No patch queue currently needed, simply drop the one patch we had as the
+    file we've patched is gone.
+  * [cb6cffa] d/control: Adding new B-D on python3-pytest
+    The upstream source comes now with a own test setup.
+  * [69f359c] d/rules: Remove folder output/ after dh_install
+    The folder output/ is created by the test suite, but we don't want have
+    this folder within the package.
+  * [87e1537] d/copyright: update copyright years
+
+ -- Carsten Schoenert <c.schoenert@t-online.de>  Thu, 04 Mar 2021 09:23:19 +0100
+
+sphinxcontrib-restbuilder (0.2-4) unstable; urgency=medium
+
+  [ Debian Janitor ]
+  * [2db5994] Set upstream metadata fields: Bug-Database, Bug-Submit,
+              Repository, Repository-Browse.
+
+  [ Carsten Schoenert ]
+  * [ffdf4de] debhelper: switch to version 13
+  * [8d544af] d/control: increase Standards-Version to 4.5.1
+
+ -- Carsten Schoenert <c.schoenert@t-online.de>  Sun, 07 Feb 2021 09:22:05 +0100
+
+sphinxcontrib-restbuilder (0.2-3) unstable; urgency=medium
+
+  * [f91a412] d/control: remove Python2 package version
+    (Closes: #938538)
+  * [51f5aa6] d/rules: adjust dh default build settings
+    We build no Python2 package anymore and can drop all related variables and
+    settings.
+  * [52440f8] autopkgtest: adjust used package version
+    Use now the Python3 package within the autopkgtest.
+  * [d187759] d/control: increase Standards-Version to 4.4.0
+    No further changes needed.
+
+ -- Carsten Schoenert <c.schoenert@t-online.de>  Sun, 15 Sep 2019 09:34:56 +0200
+
+sphinxcontrib-restbuilder (0.2-2) unstable; urgency=medium
+
+  * [0eadf28] d/control: set the correct VCS resource
+    The VCS entries were wrong and did point to an non existing URL, corrected
+    by using the real URL.
+  * [049b180] d/control: increase Standards-Version to 4.2.1
+    No further changes needed.
+  * [74e068c] create a patch queue from patchqueue branch
+    Adding a patch from Chris Lamb (Thanks!) to make the build reproducible.
+    (Closes: #908040)
+
+ -- Carsten Schoenert <c.schoenert@t-online.de>  Wed, 05 Sep 2018 19:00:49 +0200
+
+sphinxcontrib-restbuilder (0.2-1) unstable; urgency=medium
+
+  * initial release (Closes: #903954)
+  * [e5b4fe0] New upstream version 0.2
+  * [b3f61c5] basic Debianization
+  * [350df26] adding a basic autopkgtest
+
+ -- Carsten Schoenert <c.schoenert@t-online.de>  Wed, 18 Jul 2018 22:06:41 +0200

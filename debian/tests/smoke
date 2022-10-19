@@ -1,0 +1,12 @@
+#!/bin/sh
+
+set -e
+#set -x
+
+cd debian/tests/sphinxtest 
+
+echo "Check for built of ReST files ..."
+sphinx-build -b rst . _build/rst
+
+echo "Check for built of HTML files ..."
+make html
